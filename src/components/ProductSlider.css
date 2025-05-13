@@ -1,0 +1,38 @@
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '';  /* or use a Unicode arrow, or leave blank */
+  font-size: 24px;
+  color: #ad81347b;
+  font-weight: bold;
+  background: none;
+}
+.swiper {
+  width: 100%;
+  margin: 0;  /* Ensure no margin is added */
+}
+  .swiper-pagination {
+    
+    bottom: 40px;
+    transform: translateX(-30% -30%);
+  }
+  
+  /* Move navigation arrows lower */
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 70%;
+  }
+  /* Make dots bigger */
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: hsl(350, 100%, 89%);
+  }
+  
+  /* Active dot color */
+  .swiper-pagination-bullet-active {
+    background-color: hsl(350, 100%, 89%);
+  }
+  .swiper-slide img {
+    border-radius: 12px; /* adjust radius as needed */
+    
+  }

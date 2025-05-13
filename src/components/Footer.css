@@ -1,0 +1,29 @@
+/* Footer.css */
+.footer {
+    background-color: hsl(350, 100%, 89%);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: hsl(0, 0%, 30%);
+    border-top: 1px solid #e0d6cf;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Wrap your whole app in a flex container */
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Make the main content area grow to fill space */
+  .main-content {
+    flex: 1;
+  }

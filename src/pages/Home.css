@@ -1,0 +1,181 @@
+.home-page {
+  text-align: center;
+}
+
+.featured-products {
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.featured-products h1{
+  display: inline;
+    font-size: 2.3rem;
+    z-index: 5;
+    font-weight: bold;
+ margin: 0;
+ padding: 0;
+ color: hsl(0, 0%, 30%);
+  text-align: center;
+}
+.featured-products .podnaslov .proizvodi{
+  
+  color: hsl(350, 100%, 89%);
+ padding: 0;
+ margin: 0;
+}
+.featured-products h2{
+  
+  font-size: 1.3rem;
+  z-index: 5;
+  font-weight: bold;
+margin: 0;
+padding: 0;
+color: hsl(0, 0%, 30%);
+text-align: center;
+}
+.view-all-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #6b4226;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.view-all-link:hover {
+  text-decoration: underline;
+}
+
+ @media (min-width: 500px) {
+  .featured-products h1{
+  font-size: 3.5rem;
+  }
+
+  .featured-products h3{
+    font-size: 1rem;
+  }
+
+  
+}
+/* General section styling */
+.generalFunFact-section,
+.about,
+.newsletter,
+.contact-info {
+  width: 100%;
+  max-width: 1200px;  /* limits max width on large screens */
+  margin: 0 auto 2rem auto;  /* centers section + bottom space */
+  box-sizing: border-box;
+  padding: 2rem 0rem;
+
+}
+
+/* About section title */
+.about-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 30%);
+  text-align: center;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Specific newsletter adjustments */
+.newsletter {
+  border-radius: 8px;
+}
+
+/* Contact info section */
+
+
+/* Responsive improvements */
+@media (min-width: 500px) {
+  .about-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .generalFunFact-section,
+  .about,
+  .newsletter,
+  .contact-info {
+    padding: 2rem;
+  }
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.section .content {
+  flex: 1;
+}
+
+.section .image {
+  flex: 1;
+}
+
+.section .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Naizmjenični raspored */
+.section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Responzivnost za manje ekrane */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  .section:nth-child(even) {
+    flex-direction: column;
+  }
+}
+.fade-in {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ✅ RESPONSIVE ADJUSTMENTS */
+
+.about-title {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.about-title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

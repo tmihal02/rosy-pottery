@@ -1,0 +1,158 @@
+/* Base styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(350, 100%, 89%);
+  padding: 1rem 0;
+  position: relative;
+}
+
+.navbar__logo {
+  width: 60%;
+  height: auto;
+  max-width: 300px;
+}
+
+.navbar__links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__links a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: hsl(24, 48%, 28%);
+  transition: 0.7s;
+  font-size: 1rem;
+}
+
+/* Hide hamburger by default */
+.navbar__toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #6b4226;
+  cursor: pointer;
+}
+
+/* Mobile view styles */
+@media (max-width: 650px) {
+  .navbar__logo {
+    width: 60%;
+    height: auto;
+  }
+
+  .navbar__toggle {
+    display: block;
+    padding-right: 10%;
+    transition: 0.7s;
+  }
+
+  .navbar__links {
+    flex-direction: column;
+    position: absolute;
+    top: 99.5%;
+    right: 0;
+    width: 40%;
+    background-color: hsl(350, 100%, 89%);
+    border: 1px solid hsl(350, 100%, 89%);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Prevent interaction when hidden */
+    transition: opacity 0.4s ease, visibility 0.4s ease, padding 0.3s ease;
+    padding: 0;
+    z-index: 99;
+    visibility: hidden; /* Make it interactive */
+
+  }
+
+  .navbar__links--active {
+    opacity: 1; /* Show menu */
+    visibility: visible; /* Make it interactive */
+    padding: 0.5rem;
+  }
+
+  .navbar__links li {
+    margin: 0.05rem 0;
+    padding: 0.05rem 1rem;
+  }
+
+  .navbar__links a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: hsl(24, 48%, 28%);
+    transition: 0.7s;
+    font-size: 1.3rem;
+  }
+
+  .navbar__links a:hover {
+    border-radius: 4px;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+/* Desktop view styles */
+@media (min-width: 658px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(350, 100%, 89%);
+    padding: 1rem 0;
+    position: relative;
+  }
+
+  .navbar__logo {
+    width: 40%;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .navbar__links li {
+    margin: 0.05rem 0;
+    padding: 0rem 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar__links a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: hsl(0, 0%, 30%);
+    transition: 0.7s;
+    font-size: 1.5rem;
+  }
+
+  .navbar__links a:hover {
+    border-radius: 4px;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+  }
+}
+.admin-link {
+  border: 2px solid #000000;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: hsl(0, 0%, 30%);
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.admin-link:hover {
+      background-color: hsl(350, 100%, 89%);
+      color: hsl(0, 0%, 30%);
+}

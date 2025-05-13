@@ -1,0 +1,27 @@
+[
+
+    {
+      "id": "2",
+      "name": "pijati",
+      "image": "../cave.jpg"
+ 
+    }
+    , {
+      "id": "3",
+      "name": "šalice",
+      "image": "../des.png"
+      
+    },{
+      "id": "4",
+      "name": "vaze",
+    
+      "image": "../pottery-background.JPG"
+      
+    },{
+     "id": "5",
+      "name": "signature",
+      "image": "../pottery-darker.jpg"
+      
+    }
+    
+  ]

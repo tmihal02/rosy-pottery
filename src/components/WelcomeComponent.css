@@ -1,0 +1,367 @@
+@media (max-width: 430px) {
+    .image-crop-container {
+        overflow:visible;
+        position: relative; /* or absolute, depending on layout */
+    width: 100%;
+    height: auto;
+    }
+    .roza-iza-zida {
+      /* reset image shift */
+     width: 100%;            /* make sure image fits */
+     max-width: 300px;   
+     transform: translate(-108%) rotate(240deg);
+     transition: transform 1.5s ease-in-out;    /* control max size */
+   }
+   .roza-iza-zida.animate {
+     transform: translate(-50%) rotate(360deg);
+   }
+  
+   .hero-section {
+    padding: 2rem;
+    color: hsl(0, 0%, 100%);
+    height: 130vh;
+    background-image: url("/black-background.avif");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+  
+    }
+    
+    .hero-container {
+      z-index: 5;
+      padding-top: 50%;
+      width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  .hero-container .otkrijte{
+    color: hsl(350, 100%, 89%);
+  }
+  
+    .hero-container h1 {
+     font-size: 2.3rem;
+     z-index: 5;
+     font-weight: bold;
+     color: white;
+  margin: 0;
+  padding: 0;
+
+    }
+    .hero-container .keramike{
+      color: hsl(350, 100%, 89%);
+    }
+      .hero-container p {
+       font-size: 1rem;
+       z-index: 5;
+       font-weight: bold;
+    padding: 0;
+      }
+  
+      .hero-container .p{
+        margin-top: 5%;
+      }
+  
+    .cta-button {
+      background-color: hsl(350, 100%, 89%);
+      color: white;
+      border: none;
+      margin-top: 20%;
+      
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      
+      font-weight: bold;
+    }
+    .cta-button:hover {
+        background-color: hsl(350, 100%, 79%);
+    }
+}
+
+
+@media (min-width: 430px) {
+    .image-crop-container {
+        overflow:visible;
+        position: relative; /* or absolute, depending on layout */
+    width: 100%;
+    height: auto;
+    }
+    .roza-iza-zida {
+      /* reset image shift */
+     width: 100%;            /* make sure image fits */
+     max-width: 300px;   
+     transform: translate(-108%) rotate(240deg);
+     transition: transform 1.5s ease-in-out;    /* control max size */
+   }
+   .roza-iza-zida.animate {
+     transform: translate(-50%) rotate(360deg);
+   }
+  
+   .hero-section {
+    padding: 2rem;
+    color: hsl(0, 0%, 100%);
+    height: 100vh;
+    background-image: url("/black-background.avif");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+  
+    }
+    
+    .hero-container {
+      z-index: 5;
+      padding-top: 50%;
+      width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  .hero-container .otkrijte{
+    color: hsl(350, 100%, 89%);
+  }
+  
+    .hero-container h1 {
+     font-size: 2.3rem;
+     z-index: 5;
+     color: white;
+     font-weight: bold;
+  margin: 0;
+  padding: 0;
+
+    }
+    .hero-container .keramike{
+      color: hsl(350, 100%, 89%);
+    }
+      .hero-container p {
+       font-size: 1rem;
+       z-index: 5;
+       font-weight: bold;
+    padding: 0;
+      }
+  
+      .hero-container .p{
+        margin-top: 5%;
+      }
+  
+    .cta-button {
+      background-color: hsl(350, 100%, 89%);
+      color: white;
+      border: none;
+      margin-top: 20%;
+      
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      
+      font-weight: bold;
+    }
+    .cta-button:hover {
+      background-color: #a99167;
+    }
+  }
+  
+  @media (min-width: 430px) {
+    .image-crop-container {
+        position: relative; /* or absolute, depending on layout */
+      width: 100%;
+      height: auto;
+      }
+      .roza-iza-zida {
+        /* reset image shift */
+       width: 100%;            /* make sure image fits */
+       max-width: 300px;   
+       transform: translate(-160%) rotate(240deg);
+       transition: transform 1.5s ease-in-out;    /* control max size */
+     }
+     .roza-iza-zida.animate {
+       transform: translate(-60%) rotate(360deg);
+     }
+     
+    
+      .hero-section{
+        padding: 2rem;
+        color: hsl(0, 0%, 100%);
+        background-image: url("/black-background.avif");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+
+      }
+      
+      .hero-container {
+        z-index: 5;
+        padding-top: 50%;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    .hero-container .otkrijte{
+      color: hsl(350, 100%, 89%);
+    }
+    
+      .hero-container h1 {
+       font-size: 2.3rem;
+       z-index: 5;
+     color: white;
+
+       font-weight: bold;
+    margin: 0;
+    padding: 0;
+      }
+      .hero-container .keramike{
+        color: hsl(350, 100%, 89%);
+      }
+        .hero-container p {
+         font-size: 1rem;
+         z-index: 5;
+         font-weight: bold;
+      padding: 0;
+        }
+    
+        .hero-container .p{
+          margin-top: 5%;
+        }
+    
+      .cta-button {
+        background-color: hsl(350, 100%, 89%);
+        color: white;
+        border: none;
+        margin-top: 20%;
+        
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        
+        font-weight: bold;
+      }
+      .cta-button:hover {
+        background-color: #a99167;
+      }
+  }
+  
+  
+  
+  @media (min-width: 500px) {
+    .roza-iza-zida{
+        visibility:hidden;
+    }
+    
+      .hero-section{
+        padding: 2rem;
+        color: hsl(0, 0%, 100%);
+        background-image: url("/back-pottery.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        text-shadow: 2px 2px 2px gray;
+        margin: 0;
+       padding-bottom: 20%;
+      }
+      
+      .hero-container {
+        z-index: 5;
+        padding-top: 5%;
+        padding-left: 10%;
+        width: 80%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    .hero-container .otkrijte{
+      color: hsl(350, 100%, 89%);
+      transition: calc(0.7s);
+    }
+    .hero-container .otkrijte:hover{
+        color: hsl(350, 100%, 79%);
+      }
+      .hero-container h1 {
+       font-size: 3.5rem;
+       z-index: 5;
+     color: white;
+
+       font-weight: bold;
+    margin: 0;
+    padding: 0;
+      }
+      .hero-container .keramike{
+        transition: calc(0.7s);
+        color: hsl(350, 100%, 89%);
+      }
+      .hero-container .keramike:hover{
+        color: hsl(350, 100%, 79%);
+      }
+        .hero-container p {
+         font-size: 1.5rem;
+         z-index: 5;
+         font-weight: bold;
+      padding: 0;
+        }
+    
+        .hero-container .p{
+          margin-top: 5%;
+        }
+    
+      .cta-button {
+        background-color: hsl(350, 100%, 89%);
+        color: white;
+        border: none;
+        margin-top: 50%;
+        
+        padding: 1rem 5rem;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: calc(0.7s);
+        
+        font-weight: bold;
+      }
+      .cta-button:hover {
+        font-size: 1.2rem;
+
+        background-color: hsl(350, 100%, 79%);
+      }
+  }
+  
+  @media (min-width: 900px) {
+    .image-crop-container {
+      transform: translate(-10%);
+    }
+  .hero-section{
+    padding-bottom:20%;
+  }
+    .roza-iza-zida {
+      transform: translate(-25%);
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .image-crop-container {
+      transform: translate(-10%);
+    }
+    .hero-section{
+      padding-bottom:20%;
+    }
+    .roza-iza-zida {
+      transform: translate(-25%);
+    }
+  }
+  

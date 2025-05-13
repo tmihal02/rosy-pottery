@@ -1,0 +1,41 @@
+.contact-information {
+  padding: 2rem;
+  background: linear-gradient(to bottom, hsl(350, 100%, 89%), hsl(350, 100%, 89%), #ffffff);
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+@media (min-width: 760px) {
+  .contact-information {
+    background: linear-gradient(to left, hsl(350, 100%, 89%), hsl(350, 100%, 89%), #ffffff);
+
+  }
+}
+.social-links {
+  margin: 1rem 0;
+}
+
+.social-icon {
+  width: 4rem;
+  
+  height: auto;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.additional-links {
+  margin: 1rem 0;
+}
+
+.additional-links a {
+  margin: 0 10px;
+  color: #6b4226;
+  text-decoration: none;
+}
+
+.additional-links a:hover {
+  text-decoration: underline;
+}
+
+

@@ -1,0 +1,30 @@
+.general-fun-fact {
+  background-color: hsl(350, 100%, 89%);
+  padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    margin: auto;
+
+    max-width: 600px;
+  }
+  
+  .general-fun-fact.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .general-fun-fact h2 {
+    color: #c0a97d;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .general-fun-fact p {
+    color: #6b4226;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }

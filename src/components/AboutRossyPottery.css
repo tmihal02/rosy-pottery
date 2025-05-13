@@ -1,0 +1,55 @@
+.about-rossy {
+  margin: 4rem;
+
+  background: linear-gradient(to bottom, hsl(350, 100%, 89%), hsl(350, 100%, 89%), #ffffff);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  border-radius: 12px;
+  display: flex; /* Enables flexbox layout */
+   /* Allows items to wrap if there's not enough space */
+  align-items: center; /* Aligns the items to the top */
+  text-align: left; /* Align text to the left */
+  
+}
+@media (min-width: 760px) {
+  .about-rossy {
+    background: linear-gradient(to left, hsl(350, 100%, 89%), hsl(350, 100%, 89%), #ffffff);
+  
+  }
+}
+.about-rossy h2 {
+  color: #6b4226;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: left; /* Ensures the title is left-aligned */
+  width: 100%; /* Makes sure the title spans across the width of the container */
+}
+
+.about-rossy img.about-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  margin-right: 2rem; /* Adds space between the image and the text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0; /* Removes bottom margin on the image */
+}
+
+.about-rossy p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .about-rossy {
+    flex-direction: column; /* Stacks the image and text vertically on smaller screens */
+    text-align: center; /* Centers the text on small screens */
+  }
+
+  .about-rossy img.about-image {
+    margin-right: 0; /* Removes right margin on smaller screens */
+    margin-bottom: 1.5rem; /* Adds space between image and text */
+  }
+}

@@ -1,0 +1,40 @@
+.fact-card {
+    padding: 1rem;
+    opacity: 0;
+    transform: translateY(50px); /* Početni položaj elementa */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fact-card.animate {
+    opacity: 1;
+    transform: translateY(0); /* Završni položaj */
+  }
+  
+  .fun-facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: hsl(350, 100%, 89%);
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .fact-icon {
+    font-size: 2.5rem;
+    color: hsl(39, 35%, 52%);
+    margin-bottom: 0.5rem;
+  }
+  
+  .fact-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: hsl(39, 35%, 52%);
+  }
+  
+  .fact-description {
+    font-size: 1rem;
+    color: hsl(0, 0%, 30%);
+}
+  

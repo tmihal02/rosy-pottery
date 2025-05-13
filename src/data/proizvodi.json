@@ -1,0 +1,69 @@
+[
+  {
+    "id": 9,
+    "name": "fdsa",
+    "categories": [
+      "sda"
+    ],
+    "about": "sd",
+    "price": 3,
+    "image": "/uploads/1746978300281.jpg",
+    "available": true
+  },
+  {
+    "id": 10,
+    "name": "fdsa",
+    "categories": [
+      "fdas"
+    ],
+    "about": "asdf",
+    "price": 3,
+    "image": "/uploads/1746979496109.jpg",
+    "available": true
+  },
+  {
+    "id": 4,
+    "name": "art šalica",
+    "categories": [
+      "šalice"
+    ],
+    "about": "fasdasdfsd",
+    "price": 31,
+    "image": "/uploads/1747056934670.jpg",
+    "available": true
+  },
+  {
+    "id": 5,
+    "name": "sdfa",
+    "categories": [
+      "šalice",
+      "pijati"
+    ],
+    "about": "da",
+    "price": 3,
+    "image": "/uploads/1747057190981.avif",
+    "available": true
+  },
+  {
+    "id": 5,
+    "name": "salica",
+    "categories": [
+      "šalice"
+    ],
+    "about": "sdasdfa",
+    "price": 3,
+    "image": "/uploads/1747064473902.jpg",
+    "available": true
+  },
+  {
+    "id": 6,
+    "name": "Toma Mihalj",
+    "categories": [
+      "d"
+    ],
+    "about": "s",
+    "price": 34,
+    "image": "/uploads/1747083182615.jpg",
+    "available": true
+  }
+]

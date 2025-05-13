@@ -1,0 +1,12 @@
+.product-grid {
+  margin: 2rem; /* Remove side margins */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  justify-items: center; /* Center content within grid cells */
+}
+.product-list{
+  margin: 2rem;
+  gap: 2rem;
+}

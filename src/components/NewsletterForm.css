@@ -1,0 +1,83 @@
+.newsletter-container {
+  background: linear-gradient(to bottom, hsl(350, 100%, 89%), hsl(350, 100%, 89%), #ffffff);
+  color: hsl(0, 0%, 30%);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 760px) {
+  .newsletter-container {
+    background: linear-gradient(to right, hsl(350, 100%, 89%), hsl(350, 100%, 89%), #ffffff);
+  }  
+}
+.newsletter-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-container h2 span {
+  display: block;
+  font-weight: bold;
+}
+
+.newsletter-container p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-form input[type="email"],
+.newsletter-form input[type="text"] {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-group label {
+  font-size: 0.9rem;
+}
+
+.checkbox-group a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.subscribe-button {
+  background-color: #7d8b6d;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.subscribe-button:hover {
+  background-color: #6b7c5c;
+}
+
+/* ✅ On small screens, remove margin and make full width */
