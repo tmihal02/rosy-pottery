@@ -7,6 +7,30 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 5000;
 
+app.get('/api/proizvodi', (req, res) => {
+  try {
+    const data = fs.readFileSync(path.join(__dirname, 'src/data/proizvodi.json'), 'utf-8');
+    const proizvodi = JSON.parse(data);
+    res.json(proizvodi);
+  } catch (error) {
+    console.error('Error loading proizvodi:', error);
+    res.status(500).json({ message: 'Failed to load proizvodi' });
+  }
+});
+
+// GET /api/products-file — load from products.json (different from /api/products DB)
+app.get('/api/products-file', (req, res) => {
+  try {
+    const data = fs.readFileSync(path.join(__dirname, 'src/data/products.json'), 'utf-8');
+    const products = JSON.parse(data);
+    res.json(products);
+  } catch (error) {
+    console.error('Error loading products:', error);
+    res.status(500).json({ message: 'Failed to load products from file' });
+  }
+});
+
+
 // Middleware for parsing JSON and handling CORS
 app.use(express.json());
 app.use(cors({

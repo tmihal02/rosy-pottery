@@ -1,10 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import proizvodi from '../data/proizvodi.json';
-import categories from '../data/products.json';
+
 import ProductCard from './ProductCard.jsx';
 import "./CategoryFilter.css"
 export default function CategoryFilter({ initialCategory }) {
   const [selectedCategory, setSelectedCategory] = useState(null);
+
+  const [proizvodi, setProizvodi] = useState([]);
+  const [categories, setProducts] = useState([]);
+
+  // Fetch proizvodi.json
+  useEffect(() => {
+    axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/proizvodi`)
+      .then(res => setProizvodi(res.data))
+      .catch(err => console.error("Error loading proizvodi:", err));
+  }, []);
+
+  // Fetch products.json
+  useEffect(() => {
+    axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/products-file`)
+      .then(res => setProducts(res.data))
+      .catch(err => console.error("Error loading products:", err));
+  }, []);
+
 
   useEffect(() => {
     if (initialCategory) {

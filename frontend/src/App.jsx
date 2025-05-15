@@ -8,7 +8,7 @@ import LoginPage from './pages/LoginPage.jsx';
   import Home from './pages/Home.jsx';
   import Shop from './pages/Shop.jsx';
   import ProductDetail from './pages/ProductDetail.jsx';
-  import AdminPage from './pages/AdminPage';
+  import AdminPage from './pages/AdminPage.jsx';
 
   import "./App.css"
   export default function App() {

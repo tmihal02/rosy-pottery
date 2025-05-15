@@ -1,8 +1,7 @@
 import React ,{useRef,useState,useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import "./Home.css"
-import products from '../data/products.json';
-import proizvodi from '../data/proizvodi.json';
+import axios from 'axios';
 
 import ProductPreviewCard from '../components/ProductPreviewCard.jsx';
 
@@ -21,6 +20,23 @@ export default function Home() {
   
   const titlesRef = useRef([]);
 
+  const [proizvodi, setProizvodi] = useState([]);
+  const [products, setProducts] = useState([]);
+
+  // Fetch proizvodi.json
+  useEffect(() => {
+    axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/proizvodi`)
+      .then(res => setProizvodi(res.data))
+      .catch(err => console.error("Error loading proizvodi:", err));
+  }, []);
+
+  // Fetch products.json
+  useEffect(() => {
+    axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/products-file`)
+      .then(res => setProducts(res.data))
+      .catch(err => console.error("Error loading products:", err));
+  }, []);
+  
   useEffect(() => {
     function handleScroll() {
       titlesRef.current.forEach(el => {

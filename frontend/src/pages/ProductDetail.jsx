@@ -1,14 +1,24 @@
 import React, { useContext } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import products from '../data/proizvodi.json';
+
 import CartContext from '../components/CartContext.jsx';
 import './ProductDetail.css';
+import axios from 'axios';
 
 export default function ProductDetail() {
   const { id } = useParams();
   const product = products.find(p => String(p.id) === id);
   const { addToCart } = useContext(CartContext);
 
+  const [products, setProducts] = useState([]);
+
+  // Fetch products.json
+  useEffect(() => {
+    axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/proizvodi`)
+      .then(res => setProducts(res.data))
+      .catch(err => console.error("Error loading products:", err));
+  }, []);
+  
   if (!product) return <h2>Product not found</h2>;
 
   return (

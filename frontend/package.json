@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
-    "start": "react-scripts start --host",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -28,3 +27,4 @@
   },
   "proxy": "http://localhost:5000"
 }
+  
