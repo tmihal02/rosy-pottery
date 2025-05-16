@@ -14,7 +14,7 @@ export default function ProductCard({ product }) {
     <div className="product-card">
       <Link to={`/product/${product.id}`} className="product-link">
         <div className="image-wrapper">
-        <img src={`https://your-backend.onrender.com${product.image}`} alt={product.name} />
+        <img src={`https://rosy-pottery-backend.onrender.com${product.image}`} alt={product.name} />
           <h2>{product.name}</h2>
         </div>
       </Link>

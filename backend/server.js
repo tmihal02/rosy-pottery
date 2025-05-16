@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 10000;
 app.use(express.json());
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://astonishing-melba-475557.netlify.app', 'https://rosy-pottery.netlify.app']
+  origin: ['https://astonishing-melba-475557.netlify.app', 'https://rosy-pottery.netlify.app']
 }));
 
 app.get('/api/proizvodi', (req, res) => {
