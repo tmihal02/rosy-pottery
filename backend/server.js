@@ -5,7 +5,11 @@ const path = require('path');
 const cors = require('cors');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 10000;
+app.use(express.json());
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://astonishing-melba-475557.netlify.app', 'https://rosy-pottery.netlify.app']
+}));
 
 app.get('/api/proizvodi', (req, res) => {
   try {
@@ -32,11 +36,6 @@ app.get('/api/products-file', (req, res) => {
 
 
 // Middleware for parsing JSON and handling CORS
-app.use(express.json());
-app.use(cors({
-  origin: 'https://your-frontend.netlify.app'
-})); // Allow cross-origin requests (for React frontend to communicate with Express backend)
-app.use(express.urlencoded({ extended: true }));
 
 // Ensure 'uploads' directory exists
 const uploadsDir = path.join(__dirname, 'uploads');
