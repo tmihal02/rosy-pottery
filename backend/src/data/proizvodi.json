@@ -1,0 +1,13 @@
+[
+  {
+    "id":1 ,
+    "name": "salica",
+    "categories": [
+      "šalice"
+    ],
+    "about": "salica sa ukrasnim dijelom",
+    "price": 3,
+    "image": "/uploads/1746978300281.jpg",
+    "available": true
+  }
+]
